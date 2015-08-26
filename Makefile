@@ -1,6 +1,6 @@
-export CC  = gcc
+export CC  = clang-omp
 #build on the fly
-export CXX = g++
+export CXX = clang-omp++
 export MPICXX = mpicxx
 export LDFLAGS= -pthread -lm
 export CFLAGS = -Wall -O3 -msse2  -Wno-unknown-pragmas -funroll-loops

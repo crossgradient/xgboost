@@ -8,7 +8,7 @@
 #define XGBOOST_UTILS_OMP_H_
 
 #if defined(_OPENMP) && !defined(DISABLE_OPENMP)
-#include <omp.h>
+#include <libiomp/omp.h>
 #else
 #if !defined(DISABLE_OPENMP) && !defined(_MSC_VER)
 // use pragma message instead of warning
